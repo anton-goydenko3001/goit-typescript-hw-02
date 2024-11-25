@@ -5,16 +5,6 @@
   text-align: center;
 }
 
-.mainContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  width: 1280px;
-  padding: 30px 12px;
-}
-
-/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -49,4 +39,4 @@
 
 .read-the-docs {
   color: #888;
-} */
+}

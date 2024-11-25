@@ -15,4 +15,6 @@
 
 .imageItem:hover {
   box-shadow: 4px 4px 8px rgba(32, 33, 36, 0.7);
+  transform: scale(1.04);
+  transition: transform 250ms ease-in-out;
 }
