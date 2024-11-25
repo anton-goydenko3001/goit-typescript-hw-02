@@ -8,7 +8,7 @@ interface ImageGalleryProps {
   openModal: (item: Image) => void;
 }
 
-const ImageGallery: React.FC<ImageGalleryProps> = forwardRef(
+const ImageGallery = forwardRef<HTMLUListElement, ImageGalleryProps>(
   ({ data, openModal }: ImageGalleryProps, ref) => (
     <ul ref={ref} className={style.imgList}>
       {data.map((item) => (

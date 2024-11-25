@@ -66,13 +66,16 @@ const App: React.FC = () => {
 
   const scroll = (): void => {
     if (imageRef.current) {
-      const firstImageHeight =
-        imageRef.current.childNodes[0]?.getBoundingClientRect().height || 0;
-      window.scrollBy({
-        top: firstImageHeight * 2,
-        left: 0,
-        behavior: "smooth",
-      });
+      const firstImageNode = imageRef.current.childNodes[0];
+      if (firstImageNode instanceof Element) {
+        const firstImageHeight =
+          firstImageNode.getBoundingClientRect().height || 0;
+        window.scrollBy({
+          top: firstImageHeight * 2,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
     }
   };
 
