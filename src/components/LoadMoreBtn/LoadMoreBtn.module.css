@@ -1,0 +1,15 @@
+.loadMoreBtn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  outline: transparent;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  margin-top: 20px;
+}
